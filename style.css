@@ -1,0 +1,178 @@
+* {
+    margin: 0.5px;
+    padding: 0;
+    font-family: poppins;
+    color: var(--sec);
+}
+
+:root {
+    --prim: #212529;
+    --sec: #ced4da;
+}
+.dark_theme{
+    --prim:#ced4da;
+    --sec: #212529;
+}
+#icon{
+    height: 25px;
+    width: 25   px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 8vmin;
+}
+
+body {
+    background-color: var(--prim);
+}
+
+.dark-container {
+    text-align: right;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.container {
+    height: 70vh;
+    width: 35vw;
+    background-color: var(--sec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vmin;
+
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--prim);
+    color: var(--sec);
+    font-size: 10vmin;
+}
+
+#reset-btn {
+    margin-top: 10px;
+    height: 10vmin;
+    width: 20vmin;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--sec);
+    color:  var(--prim);
+    font-size: 5vmin;
+
+}
+
+#new-game {
+    margin-top: 10px;
+    height: 10vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--sec);
+    color:  var(--prim);
+    font-size: 5vmin;
+}
+
+#msg {
+    font-size: 8vmin;
+    color: var(--sec);
+}
+
+.msg-container {
+    margin-top: 30vmin;
+    height: 100vh;
+}
+
+#reset-btn:hover,
+#new-game:hover,
+#continue:hover {
+    background-color: white;
+    color: var(--sec);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.hide {
+    display: none;
+}
+
+#continue {
+    margin-top: 10px;
+    height: 10vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--sec);
+    color: var(--prim);
+    font-size: 5vmin;
+}
+
+.button-containers {
+    display: flex;
+    gap: 5vmin;
+}
+@media only screen and (max-width: 455px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 6vmin;
+    }
+
+    .container {
+        height: auto;
+        width: 80vw;
+    }
+
+    .game {
+        height: auto;
+        width: 80vw;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        font-size: 10vmin;
+    }
+
+    #reset-btn,
+    #new-game,
+    #continue,
+    .hide {
+        height: 8vmin;
+        width: 70vw;
+        font-size: 4vmin;
+    }
+
+    .msg-container {
+        margin-top: 10vmin;
+    }
+
+    #icon {
+        height: 20px;
+        width: 20px;
+    }
+}
